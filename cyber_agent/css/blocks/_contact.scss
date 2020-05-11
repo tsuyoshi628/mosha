@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &__icon {
+    @extend %fa-icon;
+    @extend .far;
+    @extend .fa-envelope;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin-right: 5px;
+    color: $colorBrand;
+    font-size: 1.4rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,77 @@
+.navDetail {
+  $this: &;
+  display: none;
+  margin-top: 10px;
+  padding: 0 50px;
+  &--active {
+    @extend #{$this};
+  }
+  &__title {
+    $this: &;
+    transform: translateY(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 380px;
+    text-align: center;
+    opacity: 0;
+    &--long {
+      @extend #{$this};
+      width: 541px;
+    }
+  }
+  &__titleWrapper {
+    padding: 0 25px;
+  }
+  &__titleEn {
+    margin-bottom: 15px;
+    font-size: 6.0rem;
+  }
+  &__titleJa {
+    font-weight: bold;
+    font-size: 2.0rem;
+  }
+  &__content {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  &__list {}
+  &__item {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin: 0 calc(15%/6);
+    border-bottom: 2px solid #{$colorOffWhite};
+    width: calc(85%/3);
+    transition: .3s;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #F7F7F6;
+      transform-origin: left top;
+      transform: scale(0, 1);
+      transition: transform 0ms;
+    }
+    &:hover::before {
+      transform-origin: left top;
+      transform: scale(1, 1);
+      transition: transform 200ms;
+    }
+  }
+  &__text {
+    z-index: 1;
+    font-weight: bold;
+  }
+  &__arrowIcon {
+    z-index: 1;
+  }
+}

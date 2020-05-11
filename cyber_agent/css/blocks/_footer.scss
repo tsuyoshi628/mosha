@@ -1,0 +1,125 @@
+.footer {
+  background-color: #000;
+  padding: 80px 0 40px;
+  text-align: center;
+  &__logo {}
+  &__logoImg {
+    margin-bottom: 20px;
+  }
+  &__content {}
+  &__navList {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  &__navItem {
+    margin: 0 15px;
+  }
+  &__navLink {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__snsBtns {
+    margin-right: 35px;
+  }
+  &__snsBtn {
+    margin: 0 6px;
+  }
+  &__snsIcon {
+    $this: &;
+    @extend %fa-icon;
+    @include ts();
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 35px;
+    &--facebook {
+      @extend #{$this};
+      @extend .fab;
+      @extend .fa-facebook-square;
+      &:hover {
+        box-shadow: #{$colorFacebook} 0px 0px 0px 20px inset;
+        color: #fff;
+      }
+    }
+    &--instagram {
+      @extend #{$this};
+      @extend .fab;
+      @extend .fa-instagram;
+      &:hover {
+        box-shadow: #{$colorInstagram} 0px 0px 0px 20px inset;
+        color: #fff;
+      }
+    }
+    &--twitter {
+      @extend #{$this};
+      @extend .fab;
+      @extend .fa-twitter;
+      &:hover {
+        box-shadow: #{$colorTwitter} 0px 0px 0px 20px inset;
+        color: #fff;
+      }
+    }
+    &--mail {
+      @extend #{$this};
+      @extend .far;
+      @extend .fa-envelope;
+      &:hover {
+        box-shadow: #{$colorMail} 0px 0px 0px 20px inset;
+        color: #fff;
+      }
+    }
+    &--youtube {
+      @extend #{$this};
+      @extend .fab;
+      @extend .fa-youtube;
+      &:hover {
+        box-shadow: #{$colorYoutube} 0px 0px 0px 20px inset;
+        color: #fff;
+      }
+    }
+  }
+  &__copyright {
+    color: #fff;
+  }
+  @include mq('SP') {
+    padding: 30px 0;
+    &__logoImg {
+      width: 140px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__navList {
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    &__navItem {
+      width: 50%;
+      margin: 0;
+      padding: 12px 0;
+      border: 0.5px solid #313130;
+    }
+    &__btns {
+      display: block;
+    }
+    &__snsBtns {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__copyright {
+      font-size: 1.2rem;
+    }
+  }
+}

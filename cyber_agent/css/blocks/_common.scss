@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+.body {
+  $this: &;
+  background-color: $colorOffWhite;
+  font-family: $fontBasic;
+  font-size: 1.6em;
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: -100;
+    background-image: url("https://hayabusa.io/ca/files/user/img/careers/top/categoryHero_bg_md.jpg?version=20200302");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+  }
+  &__overlay {
+    z-index: 90;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: #000;
+    opacity: 0.1;
+  }
+  @include mq('SP') {
+    &:before {
+      height: 280px;
+    }
+  }
+}
+*::selection {
+  background-color: $colorBrand;
+  color: #fff;
+}
+a {
+  @include ts();
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: $colorBrand;
+}

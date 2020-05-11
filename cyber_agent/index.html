@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>採用 | サイバーエージェント</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body class="body" id="body">
+<div class="body__overlay" id="body__overlay"></div>
+
+<header class="header" id="header">
+  <div class="header__bar">
+    <div class="header__logo">
+      <a class="header__logoLink" href="#">
+        <img class="header__logoImg" src="https://d2utiq8et4vl56.cloudfront.net/files/user/img/common/logo.svg" alt="">
+      </a>
+    </div>
+    <ul class="header__navs">
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--corporate" href="#">企業</a></li>
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--news" href="#">ニュース</a></li>
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--service" href="#">サービス</a></li>
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--techAndDesign" href="#">技術・デザイン</a></li>
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--career" href="#">採用</a></li>
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--IR" href="#">IR</a></li>
+      <li class="header__nav"><a class="header__navLink" id="header__navLink--CAW" href="#">CyberAgent Way</a></li>
+      <li class="header__nav"><a class="header__navLink--FEATUReS" id="header__navLink--FEATUReS" href="#">FEATUReS</a></li>
+    </ul>
+    <div class="header__search">
+      <a class="header__searchLink" id="header__searchLink"><i class="header__searchIcon"></i></a>
+      <div class="search" id="search">
+        <div class="search__container">
+          <i class="closeBtn--inSearch" id="closeBtn--inSearch"></i>
+          <div class="search__title">
+            <h2 class="search__titleEn">Search</h2>
+            <p class="search__titleJa">検索</p>
+          </div>
+          <form class="search__form" action="#">
+            <input class="search__input" type="text" name="query" placeholder="サイト内検索">
+            <i class="search__icon"></i>
+          </form>
+          <div class="search__categories">
+            <div class="search__category--active">すべて</div>
+            <div class="search__category">ニュース</div>
+            <div class="search__category">FEATUReS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="header__menuBtn"><i class="header__menuIcon"></i></div>
+      <div class="menu"><!-- めんどいから作らない --></div>
+    </div>
+  </div>
+
+  <hr class="header__hr" id="header__hr">
+
+  <div class="header__navsDetail" id="header__navsDetail">
+    <a class="contact" id="contact" href="#">
+      <i class="contact__icon"></i>
+      <p class="contact__text">お問い合わせ</p>
+    </a>
+    <div class="navDetail" id="navDetail--corporate">
+      <a class="navDetail__title" href="#">
+        <div class="navDetail__titleWrapper">
+          <h2 class="navDetail__titleEn">Corporate</h2>
+          <p class="navDetail__titleJa">企業</p>
+        </div>
+        <i class="arrowIcon--greenMedium"></i>
+      </a>
+      <div class="navDetail__content">
+        <div class="navDetail__list">
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">企業トップ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">会社概要</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">取締役・執行役員</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">アクセス</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">主要関連会社</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">ビジョン</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">トップメッセージ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">沿革</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">受賞歴</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+        </div>
+        <div class="floatClear"></div>
+      </div>
+    </div>
+    <div class="navDetail" id="navDetail--news">
+      <a class="navDetail__title" href="#">
+        <div class="navDetail__titleWrapper">
+          <h2 class="navDetail__titleEn">News</h2>
+          <p class="navDetail__titleJa">ニュース</p>
+        </div>
+        <i class="arrowIcon--greenMedium"></i>
+      </a>
+      <div class="navDetail__content">
+        <div class="navDetail__list">
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">ニューストップ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">プレスリリース</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">サービスニュース</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">お知らせ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">メールマガジン登録・解除</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+        </div>
+        <div class="floatClear"></div>
+      </div>
+    </div>
+    <div class="navDetail" id="navDetail--service">
+      <a class="navDetail__title" href="#">
+        <div class="navDetail__titleWrapper">
+          <h2 class="navDetail__titleEn">Service</h2>
+          <p class="navDetail__titleJa">サービス</p>
+        </div>
+        <i class="arrowIcon--greenMedium"></i>
+      </a>
+      <div class="navDetail__content">
+        <div class="navDetail__list">
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">サービストップ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">メディア</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">インターネット広告</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">ゲーム</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">スタートアップ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+        </div>
+        <div class="floatClear"></div>
+      </div>
+    </div>
+    <div class="navDetail" id="navDetail--techAndDesign">
+      <a class="navDetail__title" href="#">
+        <div class="navDetail__titleWrapper">
+          <h2 class="navDetail__titleEn">Tech/Design</h2>
+          <p class="navDetail__titleJa">技術・デザイン</p>
+        </div>
+        <i class="arrowIcon--greenMedium"></i>
+      </a>
+      <div class="navDetail__content">
+        <div class="navDetail__list">
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">技術・デザイントップ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">技術情報</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">研究開発</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">技術・デザインニュース</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">技術イベント情報</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+        </div>
+        <div class="floatClear"></div>
+      </div>
+    </div>
+    <div class="navDetail" id="navDetail--CAW">
+      <a class="navDetail__title--long" href="#">
+        <div class="navDetail__titleWrapper">
+          <h2 class="navDetail__titleEn">CyberAgent Way</h2>
+          <p class="navDetail__titleJa">人と企業が成長する仕組み</p>
+        </div>
+        <i class="arrowIcon--greenMedium"></i>
+      </a>
+      <div class="navDetail__content">
+        <div class="navDetail__list">
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">CyberAgent Wayトップ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">カルチャー</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">CSR</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">セキュリティ</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">ガバナンス</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">環境</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">PROGESSIONALS at CyberAgent</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">CyberAgent Wayニュース</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+          <a class="navDetail__item" href="#">
+            <p class="navDetail__text">FEATUReS</p>
+            <span class="navDetail__arrowIcon"><i class="arrowIcon--greenMedium"></i></span>
+          </a>
+        </div>
+        <div class="floatClear"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="topBtn" id="topBtn">
+  <i class="topBtn__icon"></i>
+</div>
+
+<section class="careers">
+  <div class="container--careers">
+    <div class="careers__title">
+      <h2 class="careers__titleEn">Careers</h2>
+      <p class="careers__titleJa">採用</p>
+    </div>
+    <div class="careers__contents">
+      <div class="careers__content">
+        <p class="careers__category">新卒採用</p>
+        <div class="careers__links">
+          <a class="careers__link" href="#"><span class="careers__text">ビジネスコース</span><i class="arrowIcon"></i></a>
+          <a class="careers__link" href="#"><span class="careers__text">エンジニアコース</span><i class="arrowIcon"></i></a>
+          <a class="careers__link--last" href="#"><span class="careers__text">クリエイターコース</span><i class="arrowIcon"></i></a>
+        </div>
+      </div>
+      <div class="careers__content--middle">
+        <p class="careers__category">キャリア採用</p>
+        <div class="careers__links">
+          <a class="careers__link" href="#"><span class="careers__text">募集職種一覧</span><i class="arrowIcon"></i></a>
+        </div>
+      </div>
+      <div class="careers__content">
+        <p class="careers__category">会社を知る</p>
+        <div class="careers__links">
+          <a class="careers__link" href="#"><span class="careers__text">サイブラリー</span><i class="arrowIcon"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="careers__contentsSP">
+      <a class="careers__contentSP" href="#">
+        <div class="careers__maskSP"></div>
+        <p class="careers__categorySP">新卒採用</p>
+        <p class="careers__courseNameSP">ビジネスコース</p>
+        <span class="careers__arrowIconSP"><i class="arrowIcon--greenSmall"></i></span>
+      </a>
+      <a class="careers__contentSP" href="#">
+        <div class="careers__maskSP"></div>
+        <p class="careers__categorySP">新卒採用</p>
+        <p class="careers__courseNameSP">エンジニアコース</p>
+        <span class="careers__arrowIconSP"><i class="arrowIcon--greenSmall"></i></span>
+      </a>
+      <a class="careers__contentSP" href="#">
+        <div class="careers__maskSP"></div>
+        <p class="careers__categorySP">新卒採用</p>
+        <p class="careers__courseNameSP">クリエイターコース</p>
+        <span class="careers__arrowIconSP"><i class="arrowIcon--greenSmall"></i></span>
+      </a>
+      <a class="careers__contentSP" href="#">
+        <div class="careers__maskSP"></div>
+        <p class="careers__categorySP">キャリア採用</p>
+        <p class="careers__courseNameSP">募集職種一覧</p>
+        <span class="careers__arrowIconSP"><i class="arrowIcon--greenSmall"></i></span>
+      </a>
+      <a class="careers__contentSP" href="#">
+        <div class="careers__maskSP"></div>
+        <p class="careers__categorySP--white">会社を知る</p>
+        <p class="careers__courseNameSP">サイブラリー</p>
+        <span class="careers__arrowIconSP"><i class="arrowIcon--greenSmall"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="news">
+  <div class="container">
+    <div class="news__title">
+      <h2 class="news__titleEn">News</h2>
+      <p class="news__titleJa">採用ニュース</p>
+    </div>
+    <div class="news__list">
+      <a class="news__item" href="#">
+        <div class="news__itemStatus">
+          <p class="news__itemDate">2020年3月5日</p>
+          <p class="news__itemCategory">新卒採用</p>
+        </div>
+        <p class="news__itemTitle">新卒技術職（エンジニア・クリエイター）対象 オンライン完結型インターンシップを開催します</p>
+      </a>
+      <a class="news__item" href="#">
+        <div class="news__itemStatus">
+          <p class="news__itemDate">2020年3月2日</p>
+          <p class="news__itemCategory">新卒採用</p>
+        </div>
+        <p class="news__itemTitle">2022年度 ビジネスコース新卒採用サイトをリリースしました</p>
+      </a>
+      <a class="news__item" href="#">
+        <div class="news__itemStatus">
+          <p class="news__itemDate">2020年2月4日</p>
+          <p class="news__itemCategory">新卒採用</p>
+        </div>
+        <p class="news__itemTitle">【ポートフォリオなしで参加可能】クリエイターコース選考会日程追加のお知らせ</p>
+      </a>
+    </div>
+    <a class="news__btn" href="#"><span class="news__btnText">採用ニュース一覧</span><i class="arrowIcon--greenMedium"></i></a>
+  </div>
+</section>
+
+
+<section class="relatedCompanies">
+  <div class="container">
+    <div class="relatedCompanies__title">
+      <h2 class="relatedCompanies__titleEn">Related Companies</h2>
+      <p class="relatedCompanies__titleJa">関連会社の採用情報</p>
+    </div>
+    <div class="relatedCompanies__infos">
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20395_ext_03_0.png?version=1506686337&v=1506686337&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">キャリア採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20398_ext_03_0.png?version=1506686284&v=1506686284&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">新卒採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20400_ext_03_0.png?version=1506686256&v=1506686256&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">新卒採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20405_ext_03_0.png?version=1506686185&v=1506686185&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">新卒採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20414_ext_03_0.png?version=1506685823&v=1506685823&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">新卒採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20415_ext_03_0.png?version=1506685811&v=1506685811&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">新卒採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20416_ext_03_0.png?version=1552891610&v=1552891610&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">キャリア採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20429_ext_03_0.png?version=1506685617&v=1506685617&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">新卒採用</span></p>
+      </a>
+      <a class="relatedCompanies__info" href="#">
+        <img class="relatedCompanies__infoImg" src="https://hayabusa.io/ca/files/topics/20395_ext_03_0.png?version=1506686337&v=1506686337&width=310&height=150" alt="">
+        <p class="relatedCompanies__infoCategory"><i class="arrowIcon--greenLarge"></i><span class="relatedCompanies__infoText">キャリア採用</span></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="pankuz">
+  <div class="container">
+    <a class="pankuz__link--first" href="#"><i class="pankuz__homeIcon"></i></a>
+    <i class="arrowIcon--greenSmall"></i>
+    <a class="pankuz__link" href="#">採用</a>
+  </div>
+</section>
+
+
+<section class="footer">
+  <div class="container--footer">
+    <a class="footer__logo" href="#"><img class="footer__logoImg" src="https://d2utiq8et4vl56.cloudfront.net/files/user/img/common/logo_white.svg?v=1505382142&v=1505382142" alt=""></a>
+    <div class="footer__content">
+      <ul class="footer__navList">
+        <li class="footer__navItem"><a class="footer__navLink" href="#">サイトマップ</a></li>
+        <li class="footer__navItem"><a class="footer__navLink" href="#">プライバシーポリシー</a></li>
+        <li class="footer__navItem"><a class="footer__navLink" href="#">サイトご利用規約</a></li>
+        <li class="footer__navItem"><a class="footer__navLink" href="#">お問い合わせ</a></li>
+        <li class="footer__navItem"><a class="footer__navLink" href="#">Abema公式ショップ</a></li>
+        <li class="footer__navItem"><a class="footer__navLink" href="#"></a></li>
+      </ul>
+      <div class="footer__btns">
+        <div class="footer__snsBtns">
+          <a class="footer__snsBtn" href="#"><i class="footer__snsIcon--facebook"></i></a>
+          <a class="footer__snsBtn" href="#"><i class="footer__snsIcon--instagram"></i></a>
+          <a class="footer__snsBtn" href="#"><i class="footer__snsIcon--twitter"></i></a>
+          <a class="footer__snsBtn" href="#"><i class="footer__snsIcon--mail"></i></a>
+          <a class="footer__snsBtn" href="#"><i class="footer__snsIcon--youtube"></i></a>
+        </div>
+        <a class="englishBtn" href="#">English</a>
+      </div>
+    </div>
+    <div class="footer__copyright">Copyright © CyberAgent, Inc.</div>
+  </div>
+</section>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>

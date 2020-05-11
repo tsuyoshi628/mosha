@@ -1,0 +1,26 @@
+// font-family
+$fontBasic: 'Noto Sans JP',YuGothic, "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Verdana, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", sans-serif;
+$fontCA:    "CA Sans", YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+
+// color
+$colorBrand:     #82BE28;
+$colorBrandSub:  #2D8C3C;
+$colorOffWhite:  #F0F0EE;
+$colorFacebook:  #3B5998;
+$colorInstagram: #B932A7;
+$colorTwitter:   #55ACEE;
+$colorMail:    $colorBrand;
+$colorYoutube:   #FF0000;
+
+// mq
+$breakpoints: (
+  'SP':      'screen and (max-width: 768px)',
+  'tablet':  'screen and (max-width: 1032px)',
+  'smallPC': 'screen and (max-width: 1279px)'
+);
+
+// ts
+$transitions: (
+  'hyoin': 'all 300ms cubic-bezier(0.23, 1, 0.58, 1)',
+  'poyon': 'all 450ms cubic-bezier(0.175, 0.885, 0.57, 1.48)',
+);

@@ -1,0 +1,31 @@
+.closeBtn {
+  $this: &;
+  @extend %fa-icon;
+  @extend .fas;
+  @extend .fa-times;
+  @include ts();
+  border: 3px solid #{$colorBrand};
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 2.0rem;
+  line-height: 34px;
+  color: $colorBrand;
+  &:hover {
+    box-shadow: #{$colorBrand} 0px 0px 0px 20px inset;
+    color: #fff;
+    cursor: pointer;
+  }
+  &--inSearch {
+    @extend #{$this};
+    position: fixed;
+    top: 32px;
+    right: 3.3vw;
+    @include mq('SP') {
+      top: 20px;
+      right: auto;
+      left: 20px;
+    }
+  }
+}

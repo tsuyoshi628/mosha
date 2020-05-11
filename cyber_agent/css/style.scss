@@ -1,0 +1,27 @@
+@import 'config/variables';
+
+@import 'mixins/mq';
+@import 'mixins/ts';
+
+@import "fontawesome/scss/fontawesome";
+@import "fontawesome/scss/solid";
+@import "fontawesome/scss/brands";
+@import "fontawesome/scss/regular";
+
+@import 'blocks/common';
+@import 'blocks/container';
+@import 'blocks/floatClear';
+@import 'blocks/arrowIcon';
+@import 'blocks/closeBtn';
+@import 'blocks/englishBtn';
+@import 'blocks/header';
+@import 'blocks/search';
+@import 'blocks/menu';
+@import 'blocks/contact';
+@import 'blocks/navDetail';
+@import 'blocks/topBtn';
+@import 'blocks/careers';
+@import 'blocks/news';
+@import 'blocks/relatedCompanies';
+@import 'blocks/pankuz';
+@import 'blocks/footer';

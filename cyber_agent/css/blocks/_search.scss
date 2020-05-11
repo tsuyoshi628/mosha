@@ -1,0 +1,86 @@
+.search {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 60px 40px;
+  &__container {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__titleEn {
+    margin-bottom: 15px;
+    font-size: 6.0rem;
+  }
+  &__titleJa {
+    font-weight: bold;
+    font-size: 2.0rem;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__input {
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 20px 10px;
+    width: 95%;
+    font-size: 1.4rem;
+  }
+  &__icon {
+    @extend %fa-icon;
+    @extend .fas;
+    @extend .fa-search;
+    font-size: 3.0rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__categories {
+    display: flex;
+  }
+  &__category {
+    $this: &;
+    @include ts();
+    background-color: $colorOffWhite;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 2px;
+    color: #777;
+    &:hover {
+      background-color: #777;
+      color: #fff;
+      cursor: pointer;
+    }
+    &--active {
+      @extend #{$this};
+      background-color: $colorBrandSub;
+      color: #fff;
+      &:hover {
+        background-color: $colorBrandSub;
+        cursor: default;
+      }
+    }
+  }
+  @include mq('SP') {
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__titleEn {
+      font-size: 4.0rem;
+    }
+    &__titleJa {
+      font-size: 1.4rem;
+    }
+  }
+}

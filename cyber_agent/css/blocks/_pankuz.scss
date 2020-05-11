@@ -1,0 +1,23 @@
+.pankuz {
+  background-color: #fff;
+  padding: 25px 0;
+  &__link {
+    $this: &;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    &--first {
+      @extend #{$this};
+      margin-left: 0;
+    }
+  }
+  &__homeIcon {
+    @extend %fa-icon;
+    @extend .fas;
+    @extend .fa-home;
+    color: $colorBrand;
+  }
+  @include mq('SP') {
+    padding: 20px 0;
+  }
+}

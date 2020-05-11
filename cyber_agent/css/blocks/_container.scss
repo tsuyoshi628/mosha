@@ -1,0 +1,20 @@
+.container {
+  $this: &;
+  max-width: 992px;
+  margin: 0 auto;
+  @include mq('tablet') {
+    width: 95%;
+  }
+  &--careers {
+    @extend #{$this};
+    @include mq('SP') {
+      width: 100%;
+    }
+  }
+  &--footer {
+    @extend #{$this};
+    @include mq('SP') {
+      width: 100%;
+    }
+  }
+}

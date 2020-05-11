@@ -1,0 +1,3 @@
+@mixin ts($transition: 'hyoin') {
+  transition: #{map-get($transitions, $transition)};
+}

@@ -1,0 +1,119 @@
+.header {
+  $this: &;
+  height: auto;
+  z-index: 100;
+  position: fixed;
+  top: 20px;
+  right: 2.5vw;
+  left: 2.5vw;
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 12px;
+  box-shadow: 0 0 8px #aaa;
+  &__bar {
+    display: flex;
+  }
+  &__logo {
+    flex-grow: 1;
+    padding: 2px;
+  }
+  &__logoLink {}
+  &__logoImg {
+    width: 190px;
+  }
+  &__navs {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    list-style: none;
+  }
+  &__nav {}
+  &__navLink {
+    $this: &;
+    line-height: 40px;
+    &--FEATUReS {
+      @extend #{$this};
+      font-weight: bold;
+    }
+  }
+  &__search {}
+  &__searchLink {
+    cursor: pointer;
+  }
+  &__searchIcon {
+    @extend %fa-icon;
+    @extend .fas;
+    @extend .fa-search;
+    margin-left: 30px;
+    font-size: 2.0rem;
+    line-height: 40px;
+  }
+  &__menu {}
+  &__menuBtn {
+    @include ts();
+    background-color: $colorOffWhite;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    text-align: center;
+    &:hover {
+      box-shadow: $colorBrand 0px 0px 0px 20px inset;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  &__menuIcon {
+    @extend %fa-icon;
+    @extend .fas;
+    @extend .fa-bars;
+    font-size: 2.0rem;
+    line-height: 40px;
+  }
+  &__hr {
+    display: none;
+    border-top: 4px solid #000;
+    border-radius: 2px;
+  }
+  &__navsDetail {
+    display: none;
+    padding: 20px 20px 80px;
+  }
+  @include mq('smallPC') {
+    &__logo {
+      flex-grow: 0;
+    }
+    &__navs {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+  @include mq('tablet') {
+    padding: 3px;
+    &__bar {
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__navs {
+      display: none;
+    }
+    &__logo {
+      order: 2;
+    }
+    &__logoImg {
+      width: 140px;
+    }
+    &__search {
+      order: 1;
+    }
+    &__searchIcon {
+      margin-left: 10px;
+    }
+    &__menu {
+      order: 3;
+    }
+    &__menuBtn {
+      margin-left: 0;
+    }
+  }
+}

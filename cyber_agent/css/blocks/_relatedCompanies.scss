@@ -1,0 +1,82 @@
+.relatedCompanies {
+  background-color: $colorOffWhite;
+  padding: 80px 0 100px;
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__titleEn {
+    margin-bottom: 15px;
+    font-size: 6.0rem;
+  }
+  &__titleJa {
+    font-weight: bold;
+    font-size: 2.0rem
+  }
+  &__infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__info {
+    margin-bottom: 30px;
+  }
+  &__infoImg {
+    $this: &;
+    @include ts();
+    transform: scale(1);
+    background-color: #fff;
+    border-radius: 20px;
+    width: 310px;
+    margin-bottom: 15px;
+    &--hovered {
+      @extend #{$this};
+      @include ts('poyon');
+      transform: scale(0.8);
+      background-color: #ccc;
+    }
+  }
+  &__infoCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  &__infoText {
+    margin-left: 15px;
+  }
+  @include mq('tablet') {
+    &__infos {
+      width: 651px;
+      margin: 0 auto;
+    }
+  }
+  @include mq('SP') {
+    padding: 40px 0 50px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__titleEn {
+      font-size: 3.0rem;
+    }
+    &__titleJa {
+      font-size: 1.4rem;
+    }
+    &__infos {
+      width: auto;
+      max-width: 400px;
+      display: block;
+    }
+    &__info {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &__infoImg {
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+}
